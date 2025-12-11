@@ -160,7 +160,7 @@ int organize_files(const char* source, const char* target_base, int preview, int
     char filepath[MAX_PATH];
 
     int files_processed = 0;
-
+  //Accessing the source directory
     if ((dir = opendir(source)) == NULL) {
         perror("Cannot open source directory");
         return 0;
