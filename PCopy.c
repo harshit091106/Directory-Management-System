@@ -165,7 +165,7 @@ int organize_files(const char* source, const char* target_base, int preview, int
         perror("Cannot open source directory");
         return 0;
     }
-
+    //reading each file in the directory 
     while ((entry = readdir(dir)) != NULL && files_processed < max_files) {
         if (entry->d_type != DT_REG)
             continue;
