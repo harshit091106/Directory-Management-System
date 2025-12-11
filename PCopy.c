@@ -64,7 +64,7 @@ int main() {
 }
 
 
-
+// Extracting Text Content
 char* extract_text_content(const char* filepath, char* buffer, size_t bufsize) {
     FILE* fp;
     struct stat st;
@@ -90,7 +90,7 @@ char* extract_text_content(const char* filepath, char* buffer, size_t bufsize) {
 }
 
 
-
+// Categorizing
 void simple_categorize(const char* filepath, const char* content,
                        char* category, char* newname, char* description)
 {
@@ -145,7 +145,7 @@ void simple_categorize(const char* filepath, const char* content,
 }
 
 
-
+// Organizing Files
 int organize_files(const char* source, const char* target_base, int preview, int max_files) {
     DIR* dir;
     struct dirent* entry;
